@@ -9,11 +9,13 @@ type User struct {
 }
 
 type UserStatus struct {
-	ID             int       `json:"id"`
-	Name           string    `json:"name"`
-	Points         int       `json:"points"`
-	RegisteredAt   time.Time `json:"registered_at"`
-	TasksCompleted int       `json:"tasks_completed"`
+	ID             int
+	Nickname       string
+	Refferer       string
+	Referals       int
+	Points         int
+	TasksCompleted int
+	RegisteredAt   time.Time
 }
 
 type UserCredentials struct {
